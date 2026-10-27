@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Docs tooling
+site/
+node_modules/
+.cache/
+
+# Python helpers (if any scripts are added)
+__pycache__/
+.venv/
+*.pyc
+
+# Local secrets must never land here
+.env
+*.pem
+*.key
