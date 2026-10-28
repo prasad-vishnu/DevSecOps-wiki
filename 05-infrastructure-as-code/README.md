@@ -108,7 +108,7 @@ Learn the left column deeply in Terraform. The other two columns are translation
 | `lifecycle { replace_triggered_by = [...] }` | No equivalent (change a property) | `replace_on_changes=[...]` |
 | `count` / `for_each` | `Fn::ForEach` (language extensions transform), `Conditions` | Python `for` loops and comprehensions |
 | `terraform_remote_state` / `data` lookups across states | `Fn::ImportValue` of another stack's `Export` | `pulumi.StackReference` |
-| `moved {}` block | None: renaming a logical ID replaces the resource | `aliases=[Alias(name="old")]` |
+| `moved {}` block | Stack refactoring (2025+); before that, renaming a logical ID replaced the resource | `aliases=[Alias(name="old")]` |
 | `terraform plan -refresh-only` | `detect-stack-drift` | `pulumi refresh` |
 | `terraform apply -target=` | None | `pulumi up --target` |
 | `terraform apply -replace=` | None | `pulumi up --replace` |

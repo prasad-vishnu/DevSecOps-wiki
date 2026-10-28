@@ -82,7 +82,7 @@ flowchart LR
 | `prevent_destroy` | `DeletionPolicy: Retain` + stack policy | `protect=True` |
 | `create_before_destroy` | Default replacement behaviour | Default behaviour |
 | `ignore_changes` | None | `ignore_changes=` |
-| `moved` block | None | `aliases=` |
+| `moved` block | Stack refactoring (2025+) | `aliases=` |
 | `-refresh-only` | `detect-stack-drift` | `pulumi refresh` |
 | `sensitive` | `NoEcho` | `Output.secret()` |
 | `terraform test` | cfn-lint, TaskCat, CDK assertions | pytest with mocks |
